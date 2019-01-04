@@ -1,11 +1,12 @@
 package com.company;
 
-public class trail {
+public class Trail {
+    private int[] markers;
 
     public boolean isLevelTrailSegment(int start, int end) {
         int min = this.markers[start];
         int max = this.markers[start];
-        for (int i = start+1; i<=endd;i++) {
+        for (int i = start+1; i<=end;i++) {
             if (min > this.markers[i]) {
                 min = this.markers[i];
             }
